@@ -32,15 +32,14 @@
 body {
   font-family: "Nunito", sans-serif;
   font-size: clamp(1rem, 1.5vw, 1.2rem);
-  overflow: hidden;
   color: var(--gray);
-  background: #EEEEEE;
-  /* padding: 0 2.5rem; */
+  background: #eeeeee;
 }
 
 .header {
-    background-color: #D1D8C5;
-  padding: 1.5rem 3rem;
+  background-color: #d1d8c5;
+  padding: 2.5rem 2.5rem;
+  font-size: 2.3rem;
   justify-content: center;
   text-align: center;
 }
@@ -50,9 +49,8 @@ body {
   color: var(--black);
 }
 
-.clg_list> h2{
-    color: #3d5232;
-
+.clg_list > h2 {
+  color: #3d5232;
 }
 
 .button {

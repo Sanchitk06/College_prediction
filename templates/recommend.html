@@ -17,16 +17,20 @@
         </div>
         <div class="clg_list">
             <h2>More Likely Colleges:</h2>
+            <hr>
             <ul>
                 {% for code, name in more_likely_colleges %}
                     <li>{{ code }}: {{ name }}</li>
+                    <hr>
                 {% endfor %}
             </ul>
             <br>
             <h2>Less Likely Colleges:</h2>
+            <hr>
             <ul>
                 {% for code, name in less_likely_colleges %}
                     <li>{{ code }}: {{ name }}</li>
+                    <hr>
                 {% endfor %}
             </ul>
             
