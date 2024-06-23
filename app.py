@@ -69,8 +69,11 @@ def recommend():
     category = request.form['category']
     department = request.form['department']
 
-    less_likely_colleges, more_likely_colleges = get_college_recommendations(
+    try:
+        less_likely_colleges, more_likely_colleges = get_college_recommendations(
         rank, category, department, data, college_names)
+    except ValueError as e:
+        return render_template('error.html')
 
     return render_template('recommend.html', less_likely_colleges=less_likely_colleges, more_likely_colleges=more_likely_colleges)
 
