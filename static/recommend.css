@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root {
+  --gray: rgba(28, 35, 56, 0.65);
+  --color-grey: #aaa;
+
+  --yellow: #f8c837;
+  --orange: #fca61f;
+  --black: #080e20;
+  --profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
+  --hrColor: #cfcdcd;
+  --cardColor: rgba(255, 255, 255, 0.64);
+  --buttonBg: linear-gradient(98.63deg, #f9a225 0%, #f95f35 100%);
+  --inputColor: rgba(40, 52, 62, 0.07);
+  --photo: #4cb256;
+  --video: #4a4eb7;
+  --location: #ef5757;
+  --shedule: #e1ae4a;
+
+  --primary-color2: "color: rgba(34, 34, 96, .6)";
+  --primary-color3: "color: rgba(34, 34, 96, .4)";
+  --color-green: #42ad00;
+  --color-accent: #f56692;
+  --color-delete: #ff0000;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  overflow: hidden;
+  color: var(--gray);
+  background: #EEEEEE;
+  /* padding: 0 2.5rem; */
+}
+
+.header {
+    background-color: #D1D8C5;
+  padding: 1.5rem 3rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.clg_list {
+  padding: 2% 10%;
+  color: var(--black);
+}
+
+.clg_list> h2{
+    color: #3d5232;
+
+}
+
+.button {
+  padding: 0.3rem 1rem;
+  margin: 5rem 0;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  background: var(--buttonBg);
+  transition: all 100ms ease-out;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: var(--orange);
+  background: transparent;
+  border: 0.1px solid var(--orange);
+}

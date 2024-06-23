@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KCET College Recommendation</title>
+    <link rel="stylesheet" href="../static/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+    <div class="container">
+        
+
+        <div class="header">
+
+            <h1>KCET College Recommendation System</h1>
+        </div>
+        <div class="">
+            <form action="/recommend" class="form" method="post">
+                <div class="inputs">
+
+                    <div class="input">
+                        <label for="rank">Rank:</label><br>
+                        <input type="number" id="rank" name="rank">
+                        
+                    </div>
+                    <div class="input">
+                        <label for="category">Category:</label><br>
+                        <!-- <input type="text" id="category" name="category"> -->
+                        <select id="category" type="text" name="category">
+                            <option value="">Select Category</option>
+                            <option value="3BR">3BR</option>
+                            <option value="GM">GM</option>
+                            <option value="1G">1G</option>
+                          </select>
+                    </div>
+                    <div class="input">
+                        <label for="department">Department:</label><br>
+                        <!-- <input type="text" id="department" name="department"> -->
+                        <select id="department" type="text" name="department">
+                            <option value="">Select Department</option>
+                            <option value="CS">CS</option>
+                            <option value="IS">IS</option>
+                            <option value="EC">EC</option>
+                          </select>
+
+                    </div>
+                </div>
+                
+                
+                
+                <input type="submit" class="button" value="Get Recommendations">
+            </form>
+        </div>
+        <!-- <div class="Footer">
+
+            <h1>Sanchit</h1>
+            <h1>Isha</h1>
+        </div> -->
+        <div class="blur top-minus18 right-zero">n</div>
+        <div class="blur top-36 left-minus8rem">n</div> 
+    </div>
+</body>
+</html>

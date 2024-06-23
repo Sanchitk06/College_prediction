@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root {
+  --gray: rgba(28, 35, 56, 0.65);
+  --color-grey: #aaa;
+
+  --yellow: #f8c837;
+  --orange: #fca61f;
+  --black: #242d49;
+  --profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
+  --hrColor: #cfcdcd;
+  --cardColor: rgba(255, 255, 255, 0.64);
+  --buttonBg: linear-gradient(98.63deg, #f9a225 0%, #f95f35 100%);
+  --inputColor: rgba(40, 52, 62, 0.07);
+  --photo: #4cb256;
+  --video: #4a4eb7;
+  --location: #ef5757;
+  --shedule: #e1ae4a;
+
+  --primary-color2: "color: rgba(34, 34, 96, .6)";
+  --primary-color3: "color: rgba(34, 34, 96, .4)";
+  --color-green: #42ad00;
+  --color-accent: #f56692;
+  --color-delete: #ff0000;
+}
+
+.blur.top-minus18 {
+  top: -18%;
+  right: 0;
+}
+
+.blur.top-36 {
+  top: 70%;
+  left: -8rem;
+}
+
+.blur {
+  position: absolute;
+  z-index: -1;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 70%;
+  background: #d9e4ab;
+  filter: blur(80px);
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  overflow: hidden;
+  color: var(--gray);
+  background: #eeeeee;
+}
+
+.header {
+  background-color: #d1d8c5;
+  padding: 1.5rem 3rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.form {
+  padding: 7% 10%;
+  text-align: center;
+}
+
+.inputs {
+  display: flex;
+}
+.input > label {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.input {
+  flex: 1;
+}
+
+.input > input {
+  background-color: var(--inputColor);
+  border-radius: 0.4rem;
+  width: 80%;
+  padding: 0.9rem;
+  font-size: 1.3rem;
+  border: none;
+  outline: none;
+}
+
+select {
+  background-color: var(--inputColor);
+  border-radius: 0.4rem;
+  width: 80%;
+  padding: 0.9rem;
+  font-size: 1.3rem;
+  border: none;
+  outline: none;
+}
+
+.button {
+  width: 25%;
+  padding: 0.9rem;
+  margin: 3rem 0;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  background: var(--buttonBg);
+  transition: all 100ms ease-out;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: var(--orange);
+  background: transparent;
+  border: 0.1px solid var(--orange);
+}
+
+.Footer {
+  background-color: var(--color-grey);
+  padding: 1.5rem 3rem;
+  justify-content: center;
+  text-align: center;
+}
+
+@media only screen and (max-device-width: 600px) {
+  .header {
+    background-color: #d1d8c5;
+    padding: 1.5rem 1.5rem;
+    font-size: 1.5rem;
+    justify-content: center;
+    text-align: center;
+  }
+  .inputs {
+    display: block;
+  }
+
+  .form {
+    padding: 5% 2%;
+    text-align: center;
+  }
+  .input > label {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .input {
+    margin: 2rem;
+  }
+
+  .input > input {
+    padding: 1.2rem;
+    font-size: 1.8rem;
+  }
+  
+  select {
+    padding: 1.2rem;
+    font-size: 1.8rem;
+  }
+  option{
+    font-size: 0.8rem;
+  }
+  .button {
+    width: 50%;
+    padding: 1.9rem;
+    font-size: 2rem;
+  }
+  
+
+}
