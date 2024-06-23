@@ -52,7 +52,6 @@
 body {
   font-family: "Nunito", sans-serif;
   font-size: clamp(1rem, 1.5vw, 1.2rem);
-  overflow: hidden;
   color: var(--gray);
   background: #eeeeee;
 }
@@ -129,8 +128,8 @@ select {
 @media only screen and (max-device-width: 600px) {
   .header {
     background-color: #d1d8c5;
-    padding: 1.5rem 1.5rem;
-    font-size: 1.5rem;
+    padding: 2.5rem 2.5rem;
+    font-size: 2.3rem;
     justify-content: center;
     text-align: center;
   }
@@ -139,33 +138,33 @@ select {
   }
 
   .form {
-    padding: 5% 2%;
+    padding: 10% 0;
     text-align: center;
   }
   .input > label {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
   }
   .input {
-    margin: 2rem;
+    margin: 4rem;
   }
 
   .input > input {
-    padding: 1.2rem;
-    font-size: 1.8rem;
+    padding: 2rem;
+    font-size: 3rem;
   }
   
   select {
-    padding: 1.2rem;
-    font-size: 1.8rem;
+    padding: 2rem;
+    font-size: 3rem;
   }
   option{
     font-size: 0.8rem;
   }
   .button {
-    width: 50%;
-    padding: 1.9rem;
-    font-size: 2rem;
+    width: 60%;
+    padding: 2rem;
+    font-size: 3rem;
   }
   
 

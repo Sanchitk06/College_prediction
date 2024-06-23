@@ -23,7 +23,7 @@ for col in data.columns[2:]:
 # Function to get college recommendations
 
 
-def get_college_recommendations(rank, category, department, data, college_names, n_neighbors=10):
+def get_college_recommendations(rank, category, department, data, college_names, n_neighbors=20):
     # Filter data for the given department
     dept_data = data[data['Dept'] == department]
 
@@ -46,8 +46,8 @@ def get_college_recommendations(rank, category, department, data, college_names,
     sorted_colleges = closest_colleges.sort_values(by=category)
 
     # Split into two groups: less likely and more likely
-    less_likely = sorted_colleges[sorted_colleges[category] < rank].tail(15)
-    more_likely = sorted_colleges[sorted_colleges[category] >= rank].head(15)
+    less_likely = sorted_colleges[sorted_colleges[category] < rank].tail(10)
+    more_likely = sorted_colleges[sorted_colleges[category] >= rank].head(10)
 
     # Merge with college names
     less_likely = less_likely.merge(
