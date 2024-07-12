@@ -1,0 +1,11 @@
+KCET College Recommendation System
+Developed an intelligent recommendation system to assist KCET aspirants in selecting colleges based on their entrance exam ranks, reservation category, and preferred department.
+Engineered a robust data processing pipeline that cleansed and pre-processed cutoff data, handling missing values and ensuring data integrity, using Python and Pandas.
+Implemented k-Nearest Neighbors (k-NN) algorithm to accurately predict and rank college options into two categories: those more likely and less likely to offer admission based on historical cutoff trends.
+Integrated a user-friendly web interface using Flask, allowing users to input their rank, category, and department, and receive personalized college recommendations.
+Performed data integration and visualization by merging college cutoff data with college metadata, providing comprehensive and easily understandable outputs.
+Designed and developed the front-end using HTML, CSS, and Bootstrap to ensure a responsive and intuitive user experience.
+Enhanced performance and scalability of the recommendation system by optimizing the k-NN model parameters and implementing efficient data handling techniques.
+Managed the complete software development lifecycle from requirement analysis and data collection to model deployment and testing, ensuring high-quality deliverables.
+Deployed the application on a local server for demonstration purposes, with capabilities for future deployment to cloud platforms such as AWS or Heroku.
+Demonstrated advanced proficiency in full-stack development, machine learning, and data analytics through successful implementation and testing of the system.

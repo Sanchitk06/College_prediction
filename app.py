@@ -9,7 +9,8 @@ app = Flask(__name__)
 app.config['STATIC_URL'] = '/static'
 
 # Load data
-data_path = './cutoff-2021.csv'
+# predict csv should not have year column
+data_path = './predicted_ranks.csv'
 college_names_path = './Collegewithcode.csv'
 
 data = pd.read_csv(data_path)
@@ -71,7 +72,7 @@ def recommend():
 
     try:
         less_likely_colleges, more_likely_colleges = get_college_recommendations(
-        rank, category, department, data, college_names)
+            rank, category, department, data, college_names)
     except ValueError as e:
         return render_template('error.html')
 
